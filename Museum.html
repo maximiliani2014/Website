@@ -10,16 +10,20 @@
     <meta name="robots" content="index,follow" />
     <style>
 
-    .container {
-    position: relative;
-    width: 50%;
+.container {
+  position: relative;
+  width: 100%
+}
+
+#murphycontainer {
+  background-color: D2DAD4;
 }
 
 .image {
   opacity: 1;
   display: block;
-  width: 300;
-  height: 300;
+  width: 682px;
+  height: 682px;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -27,11 +31,7 @@
 .middle {
   transition: .5s ease;
   opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  position: bottom;
   text-align: center;
 }
 
@@ -44,8 +44,7 @@
 }
 
 .text {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #C2EABA;
   font-size: 16px;
   padding: 16px 32px;
 }
@@ -55,12 +54,13 @@
   margin: 0 auto;
   width: auto;
   background-color: E6EFE9;
+  color: 303030;
   }
 
 #mainHeader {
     font-family: Comfortaa, sans-serif;
     background-color: C5F4E0;
-    width: 1000px;
+    width: 2000px;
     padding: 100px;
     border: 10px;
     font-size: 60px
@@ -68,22 +68,42 @@
     margin-right: -50%;
   }
 
+  #murphytext {
+    padding-left: 752px;
+    width: 300
+  }
+
     </style>
 </head>
+
 <body>
+
   <div id = "div1">
     <h1 id="mainHeader">Sam House - meet your destiny</h1>
   </div>
-  <div id = "murphy">
+
+  <div id = "murphycontainer">
+
     <div class="container">
-  <img src="murphy.png" alt="Murphy" class="image" style="width:100%">
-  <div class="middle">
-    <div class="text">John Doe</div>
+      <img src="murphy.jpg" alt="Murphy" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">
+          Paul Murphy is the leader of Sam House. His hobbies include making chily and checking in on us.
+        </div>
+      </div>
+    </div>
+
+    <div id = "murphytext">
+      <p>
+        Paul Peter Murphy, Baron Murphy of Torfaen, PC, KCMCO, KSG (born 25 November 1948) is a British Labour Party politician who was the Member of Parliament (MP) for Torfaen from 1987 to 2015, and served in the Cabinet from 1999-2005 and again from 2007-2008 in the roles of Northern Irish and Welsh Secretary. Prior to joining the Cabinet he held the position of Minister of State for Northern Ireland from February 1997 until 1999. He was nominated for a life peerage in the 2015 Dissolution Honours.[1]
+      </p>
+    </div>
+
   </div>
-</div>
-  </div>
+
   <p>
     IDK
   </p>
+
 </body>
 </html>
