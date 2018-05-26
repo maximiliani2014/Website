@@ -28,17 +28,20 @@
       /* Murphy's block */
       #murphycontainer {
         background-color: D2DAD4;
-        width: 65%;
-        margin-left: 17.5%;
+        width: 75%;
+        margin-left: 12.5%;
         height: 300px;
+      }
+
+      #murphyPicContainer {
+        height: 300px;
+        width: 300px;
       }
 
       /* all images */
       .image {
         opacity: 1;
         display: block;
-        height: 300px;
-        width: 300px;
         transition: .5s ease;
         backface-visibility: hidden;
       }
@@ -48,8 +51,7 @@
         transition: .5s ease;
         opacity: 0;
         text-align: top;
-        width: 300px;
-        transform: translate(0, -100%);
+
       }
 
       .text {
@@ -80,15 +82,16 @@
     <h1 id="mainHeader">Sam House - meet your destiny</h1>
   </div>
 
-  <div id = "murphycontainer" class= "container">
-
-      <img src="murphy.jpg" alt="Murphy" class="image">
-
+  <div id = "murphycontainer">
+    <div class = "container" id = "murphyPicContainer">
+      <img id = "murphy" src="murphy.jpg" alt="Murphy" class="image">
       <div class="middle">
         <div class="text">
           Paul Murphy is the leader of Sam House. His hobbies include making chili and checking in on us.
         </div>
       </div>
+    </div>
+
 
     <div id = "murphytext">
 
