@@ -78,13 +78,13 @@
     }
 
     /* Adjusters for each person's elements (could be more efficient) */
-    #murphytext { float: right; }
-    #murphy { float: left; }
-    #murphyhover { float: left; }
+    #murphytext { transform: translate( 300px, 0 ); }
+    #murphy { transform: translate( 0 , 0 ); }
+    #murphyhover { transform: translate( 0 , calc(300px - 100%) ); }
 
-    #boristext { float: left; }
-    #boris { float:right; }
-    #borishover {float: right; }
+    #boristext { transform: translate( 0 , 0 ); }
+    #boris { transform: translate( calc(100% - 300px) , 0 ); }
+    #borishover { transform: translate( calc(100% - 300px) , calc(300px - 100%) ); }
 
   </style>
 </head>
