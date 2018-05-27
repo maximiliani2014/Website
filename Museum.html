@@ -28,6 +28,7 @@
     /* All containers */
     .container {
       background-color: D2DAD4;
+      position: relative;
       margin-top: 50px;
       width: 75%;
       margin-left: 12.5%;
@@ -36,6 +37,7 @@
 
     /* All images */
     .image {
+      position: absolute;
       opacity: 1;
       display: block;
       transition: .5s ease;
@@ -46,6 +48,7 @@
 
     /* All Hover-over boxes */
     .hoverbox {
+      position: absolute;
       transition: .5s ease;
       opacity: 0;
       text-align: top;
@@ -68,6 +71,7 @@
 
     /* Every person's descriptive text */
     .persontext {
+      position: absolute;
       top: 0;
       width: calc(100% - 340px);
       padding-left: 20px;
@@ -80,7 +84,7 @@
     }
 
     /* Adjusters for each person's text height (could be more efficient) */
-    #murphytext { transform: translate(300px, -400px); }
+    #murphytext { transform: translate(320px, -400px); }
     #boristext { transform: translate(0px, 20px); }
 
     /* Flipping the format of every odd person */
