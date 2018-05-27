@@ -35,6 +35,11 @@
       height: 300px;
     }
 
+    /* Sidebar */
+    #sidebar {
+      display:none
+    }
+
     /* All images */
     .image {
       position: absolute;
@@ -128,7 +133,7 @@
     <!-- The hover stuff -->
     <div id="borishover" class="hoverbox evenhover">
       <div class="hovertext">
-        Boris Boris Boris Boris
+        k
       </div>
     </div>
 
@@ -136,7 +141,7 @@
     <div id = "boristext" class = "persontext eventext">
       <h3 class = "persontitle">This is Boris.</h3>
       <p>
-        He kinda sucks. I gotta add another sentence here because of formatting but yeah. He kinda sucks. I gotta add another sentence here because of formatting but yeah. He kinda sucks. I gotta add another sentence here because of formatting but yeah. He kinda sucks. I gotta add another sentence here because of formatting but yeah.
+        hhhhhhhhhhhhhh
       </p>
     </div>
 
@@ -256,6 +261,28 @@
     </div>
 
   </div>
+
+  <!-- The sidebar element -->
+  <div id="sidebar" class="rightsidebar">
+    <button onclick="sidebar_close()" class="button">
+      Close &times;
+    </button>
+  </div>
+
+  <!-- The button -->
+  <button class="button" onclick="sidebar_open()">
+    ☰
+  </button>
+
+  <!-- A simple script that opens the sidebar -->
+  <script>
+    function sidebar_open() {
+      document.getElementById("sidebar").style.display = "block";
+    }
+    function sidebar_close() {
+      document.getElementById("sidebar").style.display = "none";
+    }
+  </script>
 
 </body>
 </html>
