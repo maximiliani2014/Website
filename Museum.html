@@ -1,100 +1,107 @@
 
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <meta charset="utf-8" >
-    <title>Max's Website</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-    <meta name="description" content="Hello"/>
-    <meta name="keywords" content="cats, kittens, adorable cats, cute kittens" />
-    <meta name="robots" content="index,follow" />
-    <style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="utf-8" >
+  <title>Max's Website</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <meta name="description" content="Hello"/>
+  <meta name="keywords" content="cats, kittens, adorable cats, cute kittens" />
+  <meta name="robots" content="index,follow" />
+  <style>
 
-      /* everything */
-      body {
-        background-color: E6EFE9;
-        font-family: Comfortaa, sans-serif;
-      }
+    /* everything */
+    body {
+      background-color: E6EFE9;
+      font-family: Comfortaa, sans-serif;
+    }
 
-      /* main header */
-      #mainHeader {
-        background-color: C5F4E0;
-        width: auto;
-        padding: 100px;
-        font-size: 60px
-        text-align: center;
-      }
+    /* main header */
+    #mainHeader {
+      background-color: C5F4E0;
+      width: auto;
+      padding: 100px;
+      font-size: 60px
+      text-align: center;
+    }
 
-      .container {
-        background-color: D2DAD4;
-        margin-top: 50px;
-        width: 75%;
-        margin-left: 12.5%;
-        height: 300px;
-      }
+    /* All containers */
+    .container {
+      background-color: D2DAD4;
+      margin-top: 50px;
+      width: 75%;
+      margin-left: 12.5%;
+      height: 300px;
+    }
 
-      /* all images */
-      .image {
-        opacity: 1;
-        display: block;
-        transition: .5s ease;
-        backface-visibility: hidden;
-        height: 300px;
-        width: 300px;
-      }
+    /* All images */
+    .image {
+      opacity: 1;
+      display: block;
+      transition: .5s ease;
+      backface-visibility: hidden;
+      height: 300px;
+      width: 300px;
+    }
 
+    /* All Hover-over boxes */
+    .hoverbox {
+      transition: .5s ease;
+      opacity: 0;
+      text-align: top;
+      transform: translate(0, -100%);
+      width: 300px;
+    }
 
-      .middle {
-        transition: .5s ease;
-        opacity: 0;
-        text-align: top;
-        transform: translate(0, -100%);
-        width: 300px;
-      }
+    /* All Hover-over text */
+    .hovertext {
+      background-color: #C2EABA;
+      font-size: 16px;
+      padding: 16px 32px;
+    }
 
-      .text {
-        background-color: #C2EABA;
-        font-size: 16px;
-        padding: 16px 32px;
-      }
+    /* When hovering over any image */
+    .container:hover .image {
+      opacity: 0.3;
+    }
 
-      .container:hover .image {
-        opacity: 0.3;
-      }
+    .container:hover .hoverbox {
+      opacity: 1;
+    }
 
-      .container:hover .middle {
-        opacity: 1;
-      }
+    /* Every person's descriptive text */
+    .persontext {
+      transform: translate(0, -300px);
+      margin-left: 300px;
+      width: 85% - 300px;
+    }
 
-      .persontext {
-        transform: translate(0, -300px);
-        margin-left: 300px;
-        width: 85% - 300px;
-      }
-
-    </style>
+  </style>
 </head>
 
 <body>
 
-  <div id = "div1">
+  <!-- The main Header -->
+  <div>
     <h1 id="mainHeader">Sam House - meet your destiny</h1>
   </div>
 
+  <!-- Murphy's block -->
   <div id = "murphycontainer" class = "container">
 
-      <img id = "murphy" src="murphy.jpg" alt="Murphy" class="image">
-      <div class="middle">
-        <div class="text">
-          Paul Murphy is the leader of Sam House. His hobbies include making chili and checking in on us.
-        </div>
+    <!-- The image -->
+    <img id = "murphy" src="murphy.jpg" alt="Murphy" class="image">
+
+    <!-- The hover stuff -->
+    <div class="hoverbox">
+      <div class="hovertext">
+        Paul Murphy is the leader of Sam House. His hobbies include making chili and checking in on us.
       </div>
+    </div>
 
-
+    <!-- The person's text -->
     <div id = "murphytext" class = "persontext">
-      <h3>
-        This is Murphy.
-      </h3>
+      <h3>This is Murphy.</h3>
       <p>
         On top of being a swell guy, Murphy has been teaching at the school forever.
       </p>
@@ -102,24 +109,24 @@
 
   </div>
 
- <div id = "boriscontainer">
+  <!-- Boris's block -->
+  <div id = "boriscontainer" class = "container">
 
-    <div class = "container" id = "borisPicContainer">
-      <img id = "boris" src="boris.jpg" alt="Boris" class="image">
-      <div class="middle">
-        <div class="text">
-          Boris is the sole prefect of Sam House. He's more immature than the rest of us, though.
-        </div>
+    <!-- The image -->
+    <img id = "boris" src="boris.jpg" alt="Boris" class="image">
+
+    <!-- The hover stuff -->
+    <div class="hoverbox">
+      <div class="hovertext">
+        Boris Boris Boris Boris
       </div>
     </div>
 
-
+    <!-- The person's text -->
     <div id = "boristext" class = "persontext">
-      <h3>
-        This is Boris.
-      </h3>
+      <h3>This is Boris.</h3>
       <p>
-        Nothing to say about boris honestly.
+        He kinda sucks.
       </p>
     </div>
 
