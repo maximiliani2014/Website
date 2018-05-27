@@ -67,16 +67,17 @@
     /* Every person's descriptive text */
     .persontext {
       top: 0;
-      left: 300px;
       width: calc(100% - 300px);
+      padding-left: 20px;
     }
 
-    /* Flipping the format of every odd person */
-    #boristext { transform: translate(-300px, 0); }
-    #boris { transform: translate(100% - 300px, 0); }
-    #borishover { transform: translate(100% - 300px, 0); }
+    /* Adjusters for each person's text height (could be more efficient) */
+    #murphytext { transform: translate(300px, -400px); }
+    #boristext { transform: translate(0px, 20px); }
 
-    /* Adjusters for each person's text height (need to fix) */
+    /* Flipping the format of every odd person */
+    #boris { float:right; }
+    #borishover { float:right; }
 
   </style>
 </head>
