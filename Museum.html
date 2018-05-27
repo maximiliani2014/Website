@@ -76,6 +76,25 @@
       width: 85% - 300px;
     }
 
+    /* Flipping the format of every odd person */
+    #boristext {
+      margin-left: 0px;
+      width: 85% - 300px;
+    }
+
+    #Boris {
+      transform: translate(0, 100% - 300px);
+    }
+
+    #borishover {
+      transform: translate(0, 100% - 300px);
+    }
+
+    /* Adjusters for each person's text height (need to fix) */
+    #boristext {
+      transform: translate(0, 50px);
+    }
+
   </style>
 </head>
 
@@ -93,7 +112,7 @@
     <img id = "murphy" src="murphy.jpg" alt="Murphy" class="image">
 
     <!-- The hover stuff -->
-    <div class="hoverbox">
+    <div class="hoverbox" id="murphyhover">
       <div class="hovertext">
         Paul Murphy is the leader of Sam House. His hobbies include making chili and checking in on us.
       </div>
@@ -116,7 +135,7 @@
     <img id = "boris" src="boris.jpg" alt="Boris" class="image">
 
     <!-- The hover stuff -->
-    <div class="hoverbox">
+    <div class="hoverbox" id="borishover">
       <div class="hovertext">
         Boris Boris Boris Boris
       </div>
