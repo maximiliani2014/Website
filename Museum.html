@@ -74,17 +74,18 @@
       padding-right: 20px;
     }
 
+    /* Every person's title */
+    .persontitle {
+      margin: 0 auto;
+    }
+
     /* Adjusters for each person's text height (could be more efficient) */
     #murphytext { transform: translate(300px, -400px); }
     #boristext { transform: translate(0px, 20px); }
 
     /* Flipping the format of every odd person */
     #boris { float:right; }
-    #borishover { float:right; }
-
-    /* Flipping the format of every odd person */
-    #boris { float:right; }
-    #borishover {float right; transform: translate(100%, 300px);}
+    #borishover {float: right; transform: translate(100%, calc(300px - 100%);}
 
   </style>
 </head>
@@ -96,7 +97,7 @@
     <h1 id="mainHeader">Sam House - meet your destiny</h1>
   </div>
 
-  <!-- Murphy's block -->
+  <!-- Murphy block -->
   <div id = "murphycontainer" class = "container">
 
     <!-- The image -->
@@ -109,9 +110,9 @@
       </div>
     </div>
 
-    <!-- The person's text -->
+    <!-- The persons text -->
     <div id = "murphytext" class = "persontext">
-      <h3>This is Murphy.</h3>
+      <h3 class = "persontitle">This is Murphy.</h3>
       <p>
         On top of being a swell guy, Murphy has been teaching at the school forever. On top of being a swell guy, Murphy has been teaching at the school forever. On top of being a swell guy, Murphy has been teaching at the school forever. On top of being a swell guy, Murphy has been teaching at the school forever.
       </p>
@@ -119,7 +120,7 @@
 
   </div>
 
-  <!-- Boris's block -->
+  <!-- Boris block -->
   <div id = "boriscontainer" class = "container">
 
     <!-- The image -->
@@ -132,9 +133,9 @@
       </div>
     </div>
 
-    <!-- The person's text -->
+    <!-- The persons text -->
     <div id = "boristext" class = "persontext">
-      <h3>This is Boris.</h3>
+      <h3 class = "persontitle">This is Boris.</h3>
       <p>
         He kinda sucks. I gotta add another sentence here because of formatting but yeah. He kinda sucks. I gotta add another sentence here because of formatting but yeah. He kinda sucks. I gotta add another sentence here because of formatting but yeah. He kinda sucks. I gotta add another sentence here because of formatting but yeah.
       </p>
