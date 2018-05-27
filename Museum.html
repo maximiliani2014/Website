@@ -71,28 +71,17 @@
 
     /* Every person's descriptive text */
     .persontext {
-      transform: translate(0, -400px);
-      margin-left: 300px;
+      transform: translate(300px, -400px);
       width: 85% - 300px;
     }
 
     /* Flipping the format of every odd person */
-    #boristext {
-      position: left;
-    }
-
-    #Boris {
-      position: right;
-    }
-
-    #borishover {
-      position: right;
-    }
+    #boristext { transform: translate(-300px, 0); }
+    #boris { transform: translate(100% - 300px, 0); }
+    #borishover { transform: translate(100% - 300px, 0); }
 
     /* Adjusters for each person's text height (need to fix) */
-    #boristext {
-      
-    }
+    #boristext { transform: translate(0, 50px); }
 
   </style>
 </head>
