@@ -50,6 +50,8 @@
     /* The list elements in the sidebar */
     li {
       list-style-type: none;
+      margin: 0 0 3px 0;
+      font-size: 20px;
     }
 
     /* Button */
@@ -114,8 +116,7 @@
     .evenimage { right: 0; }
     .evenhover { right: 0; bottom: 0; }
 
-    /* The padding at the bottom */
-    #maxwellcontainer { padding-bottom: 50px; }
+    #bottompadding { height: 50px; }
 
   </style>
 </head>
@@ -314,6 +315,9 @@
       document.getElementById("sidebar").style.display = "none";
     }
   </script>
+
+  <!-- Padding at the bottom -->
+  <div id = "bottompadding"> </div>
 
 </body>
 </html>
