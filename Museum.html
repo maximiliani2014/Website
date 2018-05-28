@@ -52,7 +52,7 @@
       margin: 0 0 10px 10px;
       font-size: 30px;
       text-decoration: none;
-      style-type: none;
+      list-style-type: none;
     }
 
     /* All links */
@@ -60,6 +60,7 @@
       color: black;
       padding: 10px;
       text-decoration: none;
+      display: inline-block;
     }
 
     /* When hovering over a list element*/
@@ -67,15 +68,22 @@
       background-color: b6e6ad;
     }
 
-    /* Button */
+    /* Open sidebar Button */
     #openbutton {
       position: absolute;
       left: 0;
       top: 0;
       padding: 50px;
-      margin = 0;
       background-color: #C2EABA;
       transform: translate( 50px , 50px );
+    }
+
+    /* Close sidebar Button */
+    #closebutton {
+      position: relative;
+      padding: 10px;
+      margin: 10px;
+      background-color: #C5F4E0;
     }
 
     /* All images */
@@ -307,19 +315,19 @@
 
   <!-- The sidebar element -->
   <div id="sidebar">
-    <button onclick="sidebar_close()" class="button">
+    <button onclick="sidebar_close()" id="closebutton">
       Close &times;
     </button>
-    <li><a href="#murphycontainer">Murphy</a></li>
-    <li><a href="#boriscontainer">Boris</a></li>
-    <li><a href="#collettcontainer">Collett</a></li>
-    <li><a href="#andycontainer">Andy</a></li>
-    <li><a href="#maxcontainer">Max</a></li>
-    <li><a href="#jamescontainer">James</a></li>
-    <li><a href="#maxwellcontainer">Maxwell</a></li>
+    <li><a onclick="sidebar_close()" href="#murphycontainer">Murphy</a></li>
+    <li><a onclick="sidebar_close()" href="#boriscontainer">Boris</a></li>
+    <li><a onclick="sidebar_close()" href="#collettcontainer">Collett</a></li>
+    <li><a onclick="sidebar_close()" href="#andycontainer">Andy</a></li>
+    <li><a onclick="sidebar_close()" href="#maxcontainer">Max</a></li>
+    <li><a onclick="sidebar_close()" href="#jamescontainer">James</a></li>
+    <li><a onclick="sidebar_close()" href="#maxwellcontainer">Maxwell</a></li>
   </div>
 
-  <!-- A simple script that opens the sidebar -->
+  <!-- A simple script that opens and closes the sidebar -->
   <script>
     function sidebar_open() {
       document.getElementById("sidebar").style.display = "block";
