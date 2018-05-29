@@ -10,13 +10,13 @@
   <meta name="robots" content="index,follow" />
   <style>
 
-    /* everything */
+    /* Everything */
     body {
       background-color: E6EFE9;
       font-family: Comfortaa, sans-serif;
     }
 
-    /* main header */
+    /* Main header */
     #mainHeader {
       background-color: C5F4E0;
       width: auto;
@@ -47,7 +47,7 @@
       border-right: 3px solid black;
     }
 
-    /* The list elements in the sidebar */
+    /* The list elements inside the sidebar */
     li {
       margin: 0 0 10px 10px;
       font-size: 30px;
@@ -111,7 +111,7 @@
       margin: 0px;
     }
 
-    /* All Hover-over text */
+    /* All Hover-over box text */
     .hovertext {
       background-color: #C2EABA;
       font-size: 16px;
@@ -131,7 +131,7 @@
       padding-right: 20px;
     }
 
-    /* Adjusters for each person's elements (could be more efficient) */
+    /* Positioning the elements inside each person's container */
     .oddtext { transform: translate( 300px, 0 ); }
     .oddimage { transform: translate( 0 , 0 ); }
     .oddhover { bottom: 0; }
@@ -140,6 +140,7 @@
     .evenimage { right: 0; }
     .evenhover { right: 0; bottom: 0; }
 
+    /* The padding at the bottom of the page */
     #bottompadding { height: 50px; }
 
   </style>
@@ -147,13 +148,13 @@
 
 <body>
 
-  <!-- The main Header and its button-->
+  <!-- The main Header and the sidebar button-->
   <div>
     <h1 id="mainHeader">Sam House - an introduction</h1>
     <button id="openbutton" onclick="sidebar_open()">☰</button>
   </div>
 
-  <!-- Murphy's block -->
+  <!-- Every person's container/block -->
   <div id = "murphycontainer" class = "container">
 
     <!-- The image -->
@@ -176,7 +177,6 @@
 
   </div>
 
-  <!-- Boris's block -->
   <div id = "boriscontainer" class = "container">
 
     <!-- The image -->
@@ -199,7 +199,6 @@
 
   </div>
 
-  <!-- Collett's block -->
   <div id = "collettcontainer" class = "container">
 
     <!-- The image -->
@@ -222,7 +221,6 @@
 
   </div>
 
-  <!-- Andy's block -->
   <div id = "andycontainer" class = "container">
 
     <!-- The image -->
@@ -245,7 +243,6 @@
 
   </div>
 
-  <!-- Max's block -->
   <div id = "maxcontainer" class = "container">
 
     <!-- The image -->
@@ -268,7 +265,6 @@
 
   </div>
 
-  <!-- James's block -->
   <div id = "jamescontainer" class = "container">
 
     <!-- The image -->
@@ -291,7 +287,6 @@
 
   </div>
 
-  <!-- Maxwell's block -->
   <div id = "maxwellcontainer" class = "container">
 
     <!-- The image -->
@@ -314,7 +309,7 @@
 
   </div>
 
-  <!-- The sidebar element -->
+  <!-- The sidebar -->
   <div id="sidebar">
     <button onclick="sidebar_close()" id="closebutton">
       Close &times;
@@ -338,7 +333,7 @@
     }
   </script>
 
-  <!-- Padding at the bottom -->
+  <!-- Padding at the bottom of the page-->
   <div id = "bottompadding"> </div>
 
 </body>
