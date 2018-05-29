@@ -10,10 +10,29 @@
   <meta name="robots" content="index,follow" />
   <style>
 
-    /* Everything */
+    /* everything */
     body {
       background-color: E6EFE9;
       font-family: Comfortaa, sans-serif;
+    }
+
+    /* main header */
+    #mainHeader {
+      background-color: C5F4E0;
+      width: auto;
+      padding: 100px;
+      font-size: 60px
+      text-align: center;
+    }
+
+    /* All containers */
+    .container {
+      background-color: D2DAD4;
+      position: relative;
+      margin-top: 50px;
+      width: 75%;
+      margin-left: 12.5%;
+      height: 300px;
     }
 
     /* Sidebar */
@@ -32,16 +51,12 @@
     li {
       margin: 0 0 10px 10px;
       font-size: 30px;
+      text-decoration: none;
       list-style-type: none;
     }
 
-    /* When hovering over a list element*/
-    li:hover {
-      background-color: b6e6ad;
-    }
-
-    /* The links in the list elements*/
-    link {
+    /* All links */
+    a {
       color: black;
       padding: 10px;
       text-decoration: none;
@@ -51,13 +66,9 @@
       text-align: center;
     }
 
-    /* main header */
-    #mainHeader {
-      background-color: C5F4E0;
-      width: auto;
-      padding: 100px;
-      font-size: 60px
-      text-align: center;
+    /* When hovering over a list element*/
+    li:hover {
+      background-color: b6e6ad;
     }
 
     /* Open sidebar Button */
@@ -77,20 +88,6 @@
       margin: 10px;
       background-color: #C5F4E0;
     }
-
-    /* All containers */
-    .container {
-      background-color: D2DAD4;
-      position: relative;
-      margin-top: 50px;
-      width: 75%;
-      margin-left: 12.5%;
-      height: 300px;
-    }
-
-    /* When hovering over any container */
-    .container:hover .image{ opacity: 0.3; }
-    .container:hover .hoverbox{ opacity: 1; }
 
     /* All images */
     .image {
@@ -114,12 +111,16 @@
       margin: 0px;
     }
 
-    /* Text in the hover-over boxes */
+    /* All Hover-over text */
     .hovertext {
       background-color: #C2EABA;
       font-size: 16px;
       padding: 16px 32px;
     }
+
+    /* When hovering over any image */
+    .container:hover .image{ opacity: 0.3; }
+    .container:hover .hoverbox{ opacity: 1; }
 
     /* Every person's descriptive text */
     .persontext {
@@ -130,7 +131,7 @@
       padding-right: 20px;
     }
 
-    /* Positioning the elements inside the containers */
+    /* Adjusters for each person's elements (could be more efficient) */
     .oddtext { transform: translate( 300px, 0 ); }
     .oddimage { transform: translate( 0 , 0 ); }
     .oddhover { bottom: 0; }
@@ -139,7 +140,6 @@
     .evenimage { right: 0; }
     .evenhover { right: 0; bottom: 0; }
 
-    /* The padding at the bottom */
     #bottompadding { height: 50px; }
 
   </style>
@@ -153,7 +153,7 @@
     <button id="openbutton" onclick="sidebar_open()">☰</button>
   </div>
 
-  <!-- Every person's block -->
+  <!-- Murphy's block -->
   <div id = "murphycontainer" class = "container">
 
     <!-- The image -->
@@ -176,6 +176,7 @@
 
   </div>
 
+  <!-- Boris's block -->
   <div id = "boriscontainer" class = "container">
 
     <!-- The image -->
@@ -198,6 +199,7 @@
 
   </div>
 
+  <!-- Collett's block -->
   <div id = "collettcontainer" class = "container">
 
     <!-- The image -->
@@ -220,6 +222,7 @@
 
   </div>
 
+  <!-- Andy's block -->
   <div id = "andycontainer" class = "container">
 
     <!-- The image -->
@@ -242,6 +245,7 @@
 
   </div>
 
+  <!-- Max's block -->
   <div id = "maxcontainer" class = "container">
 
     <!-- The image -->
@@ -264,6 +268,7 @@
 
   </div>
 
+  <!-- James's block -->
   <div id = "jamescontainer" class = "container">
 
     <!-- The image -->
@@ -286,6 +291,7 @@
 
   </div>
 
+  <!-- Maxwell's block -->
   <div id = "maxwellcontainer" class = "container">
 
     <!-- The image -->
@@ -308,18 +314,18 @@
 
   </div>
 
-  <!-- The sidebar -->
+  <!-- The sidebar element -->
   <div id="sidebar">
     <button onclick="sidebar_close()" id="closebutton">
       Close &times;
     </button>
-    <li><link onclick="sidebar_close()" href="#murphycontainer">Murphy</link></li>
-    <li><link onclick="sidebar_close()" href="#boriscontainer">Boris</link></li>
-    <li><link onclick="sidebar_close()" href="#collettcontainer">Collett</link></li>
-    <li><link onclick="sidebar_close()" href="#andycontainer">Andy</link></li>
-    <li><link onclick="sidebar_close()" href="#maxcontainer">Max</link></li>
-    <li><link onclick="sidebar_close()" href="#jamescontainer">James</link></li>
-    <li><link onclick="sidebar_close()" href="#maxwellcontainer">Maxwell</link></li>
+    <li><a onclick="sidebar_close()" href="#murphycontainer">Murphy</a></li>
+    <li><a onclick="sidebar_close()" href="#boriscontainer">Boris</a></li>
+    <li><a onclick="sidebar_close()" href="#collettcontainer">Collett</a></li>
+    <li><a onclick="sidebar_close()" href="#andycontainer">Andy</a></li>
+    <li><a onclick="sidebar_close()" href="#maxcontainer">Max</a></li>
+    <li><a onclick="sidebar_close()" href="#jamescontainer">James</a></li>
+    <li><a onclick="sidebar_close()" href="#maxwellcontainer">Maxwell</a></li>
   </div>
 
   <!-- A simple script that opens and closes the sidebar -->
