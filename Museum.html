@@ -55,15 +55,14 @@
       list-style-type: none;
     }
 
-    /* All links */
-    a {
-      color: black;
-      padding: 10px;
+    /* All link-buttons */
+    button {
+      text-decoration-color: black;
+      height: 20px;
       text-decoration: none;
-      display: inline-block;
     }
 
-    /* When hovering over a list element*/
+    /* When hovering over a link button (using li to only affect sidebar)*/
     li:hover {
       background-color: b6e6ad;
     }
@@ -316,13 +315,13 @@
     <button onclick="sidebar_close()" id="closebutton">
       Close &times;
     </button>
-    <li><a onclick="sidebar_close()" href="#murphycontainer">Murphy</a></li>
-    <li><a onclick="sidebar_close()" href="#boriscontainer">Boris</a></li>
-    <li><a onclick="sidebar_close()" href="#collettcontainer">Collett</a></li>
-    <li><a onclick="sidebar_close()" href="#andycontainer">Andy</a></li>
-    <li><a onclick="sidebar_close()" href="#maxcontainer">Max</a></li>
-    <li><a onclick="sidebar_close()" href="#jamescontainer">James</a></li>
-    <li><a onclick="sidebar_close()" href="#maxwellcontainer">Maxwell</a></li>
+    <li><button onclick="sidebar_close()" href="#murphycontainer">Murphy</button></li>
+    <li><button onclick="sidebar_close()" href="#boriscontainer">Boris</button></li>
+    <li><button onclick="sidebar_close()" href="#collettcontainer">Collett</button></li>
+    <li><button onclick="sidebar_close()" href="#andycontainer">Andy</button></li>
+    <li><button onclick="sidebar_close()" href="#maxcontainer">Max</button></li>
+    <li><button onclick="sidebar_close()" href="#jamescontainer">James</button></li>
+    <li><button onclick="sidebar_close()" href="#maxwellcontainer">Maxwell</button></li>
   </div>
 
   <!-- A simple script that opens and closes the sidebar -->
